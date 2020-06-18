@@ -1,5 +1,8 @@
 package source;
 
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,6 +24,9 @@ public class Journal {
 	public String toString() {
 		//System.out.print(entries.toString());
 		return String.join(System.lineSeparator(),entries);
-	}
-
+	}	
+	
+	public void load(String fileName) {	}
+	public void load(URL url) {}
+	
 }
